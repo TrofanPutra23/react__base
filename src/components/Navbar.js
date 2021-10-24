@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 
-function Navbar() {
+export default function Navbar() {
     const [click, setClick] = useState(false);
     const [button , setButton] = useState(true);
 
@@ -29,17 +29,54 @@ function Navbar() {
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
                     </div>
                     <ul className={click ? 'navMenu active' : 'navMenu'}>
-                        <li className="navItem">
+                        <li className="navItem main">
                             <Link to='/pageA' className='navLinks' onClick={conditonMobileMenu} >
                                 Page 1
                             </Link>
                         </li>
-                        <li className="navItem">
+                        <li className="navItem side">
                             <Link to='/pageB' className='navLinks' onClick={conditonMobileMenu} >
-                                Page 2
+                                side page 1
                             </Link>
                         </li>
-                        <li className="navItem">
+                        <li className="navItem side">
+                            <Link to='/pageC' className='navLinks' onClick={conditonMobileMenu} >
+                                Page 3
+                            </Link>
+                        </li>
+                        <li className="navItem side">
+                            <Link to='/pageC' className='navLinks' onClick={conditonMobileMenu} >
+                                Page 3
+                            </Link>
+                        </li>                        <li className="navItem side">
+                            <Link to='/pageC' className='navLinks' onClick={conditonMobileMenu} >
+                                Page 3
+                            </Link>
+                        </li>                        <li className="navItem side">
+                            <Link to='/pageC' className='navLinks' onClick={conditonMobileMenu} >
+                                Page 3
+                            </Link>
+                        </li>                        <li className="navItem side">
+                            <Link to='/pageC' className='navLinks' onClick={conditonMobileMenu} >
+                                Page 3
+                            </Link>
+                        </li>                        <li className="navItem side">
+                            <Link to='/pageC' className='navLinks' onClick={conditonMobileMenu} >
+                                Page 3
+                            </Link>
+                        </li>                        <li className="navItem side">
+                            <Link to='/pageC' className='navLinks' onClick={conditonMobileMenu} >
+                                Page 3
+                            </Link>
+                        </li>                        <li className="navItem side">
+                            <Link to='/pageC' className='navLinks' onClick={conditonMobileMenu} >
+                                Page 3
+                            </Link>
+                        </li>                        <li className="navItem side">
+                            <Link to='/pageC' className='navLinks' onClick={conditonMobileMenu} >
+                                Page 3
+                            </Link>
+                        </li>                        <li className="navItem side">
                             <Link to='/pageC' className='navLinks' onClick={conditonMobileMenu} >
                                 Page 3
                             </Link>
@@ -50,4 +87,3 @@ function Navbar() {
         </>
     )
 }
-export default Navbar;
